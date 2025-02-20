@@ -50,10 +50,10 @@ To understand the optimal balance between risk and return, 5,000 portfolios with
 After optimizing the portfolio for the highest Sharpe ratio, a Monte Carlo simulation was conducted to assess long-term performance and risk under uncertainty.
 
 ### Key Reasons:
-- Models Market Uncertainty – Simulates thousands of potential future price paths to account for unpredictable market conditions.
-- Projects Portfolio Growth – Estimates possible portfolio values over a 10-year period (252 trading days per year).
-- Compares Risk Profiles – Evaluates the equal-weight vs. optimized portfolio, showing how optimization improves stability.
-- Supports Risk Management – Quantifies potential worst-case losses, aiding in informed decision-making.
+- **Models Market Uncertainty:** Simulates thousands of potential future price paths to account for unpredictable market conditions.
+- **Projects Portfolio Growth:** Estimates possible portfolio values over a 10-year period (252 trading days per year).
+- **Compares Risk Profiles:** Evaluates the equal-weight vs. optimized portfolio, showing how optimization improves stability.
+- **Supports Risk Management:** Quantifies potential worst-case losses, aiding in informed decision-making.
 
 Monte Carlo analysis confirms that the optimized portfolio offers higher returns with better risk control, making it a superior investment strategy.
 
