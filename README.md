@@ -29,7 +29,7 @@ This project applies Modern Portfolio Theory (MPT) and Monte Carlo simulations t
 
 - **Value at Risk (VaR) and Conditional Value at Risk (CVaR):** Key risk measures assessing potential losses at a 5% confidence level.
 
-## **Key Findings: Efficient Frontier Analysis**
+## **Key Findings: Efficient Frontier**
 ![Efficient Frontier](https://github.com/T-Tamz/Portfolio-Optimization-and-Risk-Analysis-using-R/blob/6eade80fb92a889b1d1daa704ce943e5e2501e7d/Images/Effecient%20frontier/Effecient%20Frontier%20.png)
 
 To understand the optimal balance between risk and return, 5,000 portfolios with randomly assigned weight allocations were simulated to analyze the efficient frontier. By optimizing for the Sharpe ratio, investors achieve better compensation per unit of risk compared to naive allocation strategies.
@@ -46,8 +46,18 @@ To understand the optimal balance between risk and return, 5,000 portfolios with
 | CVX    | 3.8898       |
 | COST   | 68.9233      |
 
-## **Key Findings: Monte Carlo Simulations** 
+## **Why perform a Monte Carlo Simulation?**
+After optimizing the portfolio for the highest Sharpe ratio, a Monte Carlo simulation was conducted to assess long-term performance and risk under uncertainty.
 
+### Key Reasons:
+- Models Market Uncertainty – Simulates thousands of potential future price paths to account for unpredictable market conditions.
+- Projects Portfolio Growth – Estimates possible portfolio values over a 10-year period (252 trading days per year).
+- Compares Risk Profiles – Evaluates the equal-weight vs. optimized portfolio, showing how optimization improves stability.
+- Supports Risk Management – Quantifies potential worst-case losses, aiding in informed decision-making.
+
+Monte Carlo analysis confirms that the optimized portfolio offers higher returns with better risk control, making it a superior investment strategy.
+
+## **Key Findings: Monte Carlo Simulations** 
 ### Simulation methodology:
 A 10-year Monte Carlo simulation (252 trading days per year) was performed on both the equal-weight portfolio and the optimized portfolio (highest Sharpe ratio).
 
@@ -59,7 +69,7 @@ Initial investment: $100,000
 
 
 
-### Equal Weight Portfolio (Baseline)
+### 1. Equal Weight Portfolio (Baseline)
 - All assets were given equal allocation as a comparative reference.
 
 Findings:
@@ -67,7 +77,7 @@ The distribution of final portfolio values was wider, indicating higher dispersi
 
   ![Montecarlo Equal Weight](https://github.com/T-Tamz/Portfolio-Optimization-and-Risk-Analysis-using-R/blob/6eade80fb92a889b1d1daa704ce943e5e2501e7d/Images/Montecarlo%20equal%20weights/Equal%20weights%20motecarlo.png)
 
-### Optimized Portfolio (Highest Sharpe Ratio)
+### 2. Optimized Portfolio (Highest Sharpe Ratio)
 - The portfolio was optimized for maximum Sharpe ratio, aiming for higher risk-adjusted returns.
 
 Findings:
@@ -76,7 +86,7 @@ More stable upward trend over time. Lower probability of extreme losses, showing
  ![Montecarlo Sharp Ratio](https://github.com/T-Tamz/Portfolio-Optimization-and-Risk-Analysis-using-R/blob/6eade80fb92a889b1d1daa704ce943e5e2501e7d/Images/Montecarlo%20Optimized%20Sharpe/Montecarlo%20Optimized.png)
 
 
-### Risk Analysis: Value at Risk (VaR) & Conditional Value at Risk (CVaR)
+### 3. Risk Analysis: Value at Risk (VaR) & Conditional Value at Risk (CVaR)
 
 - 5% VaR: Represents the potential loss in the worst 5% of cases.
 
