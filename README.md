@@ -36,7 +36,7 @@ To understand the optimal balance between risk and return, 5,000 portfolios with
 
 - The efficient frontier visually maps out the optimal portfolios, helping to balance return against risk.
 
-- The portfolio with the highest Sharpe ratio was identified as the most efficient based on risk-adjusted return.
+- The portfolio with the highest Sharpe Ratio was identified as the most efficient based on risk-adjusted return.
 
 | Ticker | Allocation (%) |
 |--------|--------------|
@@ -47,7 +47,7 @@ To understand the optimal balance between risk and return, 5,000 portfolios with
 | COST   | 68.9233      |
 
 ## **Why perform a Monte Carlo Simulation?**
-After optimizing the portfolio for the highest Sharpe ratio, a Monte Carlo simulation was conducted to assess long-term performance and risk under uncertainty.
+After optimizing the portfolio for the highest Sharpe Ratio, a Monte Carlo simulation was conducted to assess long-term performance and risk under uncertainty.
 
 ### Key Reasons:
 - **Models Market Uncertainty:** Simulates thousands of potential future price paths to account for unpredictable market conditions.
@@ -78,7 +78,7 @@ The distribution of final portfolio values was wider, indicating higher dispersi
   ![Montecarlo Equal Weight](https://github.com/T-Tamz/Portfolio-Optimization-and-Risk-Analysis-using-R/blob/6eade80fb92a889b1d1daa704ce943e5e2501e7d/Images/Montecarlo%20equal%20weights/Equal%20weights%20motecarlo.png)
 
 ### 2. Optimized Portfolio (Highest Sharpe Ratio)
-- The portfolio was optimized for maximum Sharpe ratio, aiming for higher risk-adjusted returns.
+- The portfolio was optimized for maximum Sharpe Ratio, aiming for higher risk-adjusted returns.
 
 Findings:
 More stable upward trend over time. Lower probability of extreme losses, showing better risk control.
@@ -131,7 +131,7 @@ Key Insight: The optimized portfolio significantly reduces extreme downside risk
 
 - The efficient frontier helped identify the most efficient portfolios in terms of risk-return tradeoff.
 
-- The portfolio with the highest Sharpe ratio outperformed the equal-weight portfolio in Monte Carlo simulations, demonstrating the value of optimization.
+- The portfolio with the highest Sharpe Ratio outperformed the equal-weight portfolio in Monte Carlo simulations, demonstrating the value of optimization.
 
 - Risk metrics (VaR & CVaR) confirmed that the optimized portfolio is more resilient to extreme market downturns, making it a better investment choice for risk-averse investors.
 
