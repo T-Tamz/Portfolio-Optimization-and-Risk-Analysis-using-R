@@ -8,13 +8,19 @@ This project applies Modern Portfolio Theory (MPT) and Monte Carlo simulations t
 
 **Historical Data:** End-of-day stock prices used to calculate returns and volatility.
 
-**Assets Analyzed:**
-- NVIDIA (NVDA)
-- Goldman Sachs (GS)
-- Eli Lilly (LLY)
-- Chevron (CVX)
-- Costco (COST)
+**Note:** Example diversified portfolio
 
+### Portfolio Asset Selection
+
+| Stock         | Ticker | Sector                 | Reason for Inclusion                                        |
+|--------------|--------|------------------------|-------------------------------------------------------------|
+| NVIDIA       | NVDA   | Technology             | Dominant in GPU market, key player in AI and data centers  |
+| Goldman Sachs| GS     | Financials             | Investment banking leader, benefits from interest rate cycles |
+| Eli Lilly    | LLY    | Healthcare             | Strong pharma pipeline, leading in obesity & diabetes drugs |
+| Chevron      | CVX    | Energy                 | Oil & gas giant with dividends, inflation hedge            |
+| Costco       | COST   | Consumer Discretionary | Resilient business model, strong membership-based revenue  |
+
+**Reasoning:** This portfolio is well-diversified across multiple sectors, reducing risk while maintaining growth potential. NVIDIA (Technology) provides exposure to AI and cloud computing, Goldman Sachs (Financials) benefits from market cycles, Eli Lilly (Healthcare) offers defensive stability with a strong pharma pipeline, Chevron (Energy) serves as an inflation hedge with dividends, and Costco (Consumer Discretionary) ensures resilience through its membership-driven model. By combining cyclical (NVDA, GS, CVX) and defensive (LLY, COST) stocks, the portfolio balances growth and stability, minimizing risk while positioning for long-term gains.
 
 
 ## **Key Metrics Used**
@@ -101,18 +107,20 @@ More stable upward trend over time. Lower probability of extreme losses, showing
  
 
 **5% VaR (Value at Risk)**
-- Represents the worst expected loss in 5% of cases:
-- **Equal Weights Portfolio:** Drops to **$90,760.88**, meaning a potential loss of **$9,239.12**.
-- **Optimized Portfolio:** Drops to **$96,380.40**, meaning a potential loss of **$3,619.60**.
 
 Key Insight: The optimized portfolio limits worst-case losses, reducing volatility risk.
 
+- **Equal Weights Portfolio:** Drops to **$90,760.88**, meaning a potential loss of **$9,239.12**.
+- **Optimized Portfolio:** Drops to **$96,380.40**, meaning a potential loss of **$3,619.60**.
+
+
+
 **5% CVaR (Conditional Value at Risk)**
-- Measures the average loss in the worst 5% of cases:
-- **Equal Weights Portfolio:** Expected to fall to **$88,270.07**, an average loss of **$11,729.93**.
-- **Optimized Portfolio:** Expected to fall to **$94,998.79**, an average loss of **$5,001.21**.
 
 Key Insight: The optimized portfolio significantly reduces extreme downside risk, making it more resilient.
+
+- **Equal Weights Portfolio:** Expected to fall to **$88,270.07**, an average loss of **$11,729.93**.
+- **Optimized Portfolio:** Expected to fall to **$94,998.79**, an average loss of **$5,001.21**.
 
 **Takeaways:**
 - The optimized portfolio has lower expected losses in extreme downturns.
